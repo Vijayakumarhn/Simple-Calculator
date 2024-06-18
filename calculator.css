@@ -1,0 +1,141 @@
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background:#494e54;
+            
+        }
+        .calculator {
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        input[type="button"] {
+            width: 50px;
+            height: 50px;
+            font-size: 20px;
+            margin: 5px;
+            cursor: pointer;
+            position: relative;
+            top: 300px;
+        }
+        input[type="text"] {
+            width: 100%;
+            font-size: 24px;
+            padding: 2px;
+            margin-bottom: 10px;
+        }
+        .container{
+            padding: 10px;
+            background: #292c31;
+            height: 600px;
+            width: 330px;
+            border-radius: 10px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            overflow: hidden;
+            box-shadow: rgba(17, 17, 26, 0.05) 0px 4px 16px, rgba(17,  17, 26, 0.05) 0px 8px 32px;
+        }
+        .container .input-box{
+            height:100px;
+            width: 100%;
+            position:absolute;
+            top: 0;
+            left: 0;
+            padding: 50px;
+           overflow-x: scroll;
+           background: none;
+           font-size: 30px;
+           color: white;
+           float: right;
+        }
+        .container .calculator{
+            position: absolute;
+            left: 0;
+            top: 200px;
+            width: 100%;
+            padding: 10px;
+            padding-left: 14px;
+        }
+        .container .calculator .btn,.container .calculator .btn,.container .calculator #ac,.container .calculator #del-btn{
+            all: unset;
+            width: 60px;
+            height: 60px;
+            float: left;
+            color:white;
+            display: flex;
+            justify-content: center;
+            font-size: 21px;
+            font-weight: 600;
+            align-items: center;
+            margin-left: 12.5px;
+            margin-top: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        .container .calculator .btn,.container .calculator .btn,.container .calculator #ac,.container .calculator #del-btn{
+            background-color: #323338;
+            box-shadow: rgba(0,  0, 0, 0.5) 0px 4px 12px;
+            margin: 10px;
+        }
+        .container .calculator .with-bg-btn{
+            background: #30ad6b;
+        }
+        ::selection{
+            background: rgba(100, 149, 237, 0.8);
+            color: white;
+        }
+        @media screen and (max-width: 360px) {
+            .container{
+                height: 500px;
+                width: 270px;
+                padding: 30px;
+            }
+            .container .input-box{
+            height:70px;
+            width: 100%;
+            padding: 20px;
+        }
+        .container .calculator{
+            top: 130px;
+            width: 100%;
+            padding: auto;
+            margin: auto;
+        }
+ }
+ @media screen and (max-width: 330px) {
+    
+            .container{
+                height: 400px;
+                width: 200px;
+                padding: 30px;
+                margin: auto;
+            }
+            .container .input-box{
+            height:40px;
+            width: 100%;
+            padding: 20px;
+        }
+        .container .calculator{
+            top: 100px;
+            width: 100%;
+            padding: auto;
+            margin: auto;
+        }
+        .container .calculator .btn,.container .calculator .btn,.container .calculator #ac,.container .calculator #del-btn{
+            width: 40px;
+            height: 40px;
+            float: left;
+            color:white;
+            display: flex;
+            justify-content: center;
+            font-size: 21px;
+            font-weight: 600;
+            align-items: center;
+            margin-left: 12.5px;
+            margin-top: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+ }
